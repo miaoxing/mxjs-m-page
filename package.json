@@ -10,7 +10,14 @@
   "jest": {
     "preset": "jest-preset-miaoxing"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@fower/core": "^1.16.0",
+    "@fower/taro": "^1.16.0",
+    "@tarojs/taro": "^3.2.10",
+    "clsx": "^1.1.1",
+    "react": "^17.0.0",
+    "prop-types": "^15.7.2"
+  },
   "devDependencies": {
     "@miaoxing/dev": "^7.0.1"
   }
