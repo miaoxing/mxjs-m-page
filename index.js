@@ -22,7 +22,7 @@ const Page = ({bg, className, ...props}) => {
   const config = getConfig();
 
   // NOTE: 暂时只使用几个主要颜色
-  const colors = ['primary', 'secondary', 'gray'];
+  const colors = ['primary', 'secondary', 'gray', 'success', 'danger', 'warning'];
   const levels = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900'];
   colors.forEach(color => {
     levels.forEach(level => {
