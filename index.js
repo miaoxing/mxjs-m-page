@@ -1,4 +1,4 @@
-import {useEffect} from 'react';
+import {useState, useEffect, createContext} from 'react';
 import {View} from '@fower/taro';
 import Taro from '@tarojs/taro';
 import {getConfig} from '@fower/core';
@@ -6,7 +6,19 @@ import clsx from 'clsx';
 import './index.scss';
 import PropTypes from 'prop-types';
 
+const PageContext = createContext({
+  css: {},
+  // eslint-disable-next-line no-unused-vars
+  setCss: (css) => {
+  },
+});
+
+export {PageContext};
+
 const Page = ({bg, className, ...props}) => {
+  // 允许其他组件通过 Context 设置页面 CSS
+  const [css, setCss] = useState({});
+
   useEffect(() => {
     bg && Taro.setBackgroundColor({
       backgroundColor: bg,
@@ -35,7 +47,9 @@ const Page = ({bg, className, ...props}) => {
   style['--mx-colors-secondary-fg-500'] = config.theme.colors.secondaryFg500;
 
   return (
-    <View className={clsx('mx-page', className)} style={style} {...props}/>
+    <PageContext.Provider value={{css, setCss}}>
+      <View className={clsx('mx-page', className)} style={style} {...props} css={css}/>
+    </PageContext.Provider>
   );
 };
 
