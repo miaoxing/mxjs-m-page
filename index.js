@@ -46,6 +46,14 @@ const Page = ({bg, className, ...props}) => {
   style['--mx-colors-primary-fg-500'] = config.theme.colors.primaryFg500;
   style['--mx-colors-secondary-fg-500'] = config.theme.colors.secondaryFg500;
 
+  Object.entries(config.theme.spacings).forEach(([key, value]) => {
+    style['--mx-space-' + key.replace('.', '\\.')] = value;
+  });
+
+  Object.entries(config.theme.fontSizes).forEach(([key, value]) => {
+    style['--mx-fontSizes-' + key] = value;
+  });
+
   return (
     <PageContext.Provider value={{css, setCss}}>
       <View className={clsx('mx-page', className)} style={style} {...props} css={css}/>

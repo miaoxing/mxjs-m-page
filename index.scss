@@ -1,6 +1,6 @@
 .mx-page {
   min-height: 100vh;
-  font-size: 1rem;
+  font-size: var(--mx-fontSizes-base);
   background: var(--mx-colors-gray-100);
   color: var(--mx-colors-gray-900);
 }
