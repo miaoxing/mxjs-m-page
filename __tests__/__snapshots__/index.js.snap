@@ -1,5 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Page PageContext 1`] = `"mx-page css-15g3s8k-Component"`;
+
+exports[`Page PageContext 2`] = `"mx-page css-dnywuw-Component"`;
+
 exports[`Page basic 1`] = `
 <div>
   <taro-view-core
