@@ -5,6 +5,7 @@ import {getConfig} from '@fower/core';
 import clsx from 'clsx';
 import './index.scss';
 import PropTypes from 'prop-types';
+import Ret from '@mxjs/m-ret';
 
 const PageContext = createContext({
   css: {},
@@ -15,7 +16,7 @@ const PageContext = createContext({
 
 export {PageContext};
 
-const Page = ({bg, className, ...props}) => {
+const Page = ({bg, className, children, ...props}) => {
   // 允许其他组件通过 Context 设置页面 CSS
   const [css, setCss] = useState({});
 
@@ -56,7 +57,9 @@ const Page = ({bg, className, ...props}) => {
 
   return (
     <PageContext.Provider value={{css, setCss}}>
-      <View className={clsx('mx-page', className)} style={style} {...props} css={css}/>
+      <View className={clsx('mx-page', className)} style={style} {...props} css={css}>
+        {'ret' in props ? <Ret ret={props.ret}>{children}</Ret> : children}
+      </View>
     </PageContext.Provider>
   );
 };
@@ -64,6 +67,8 @@ const Page = ({bg, className, ...props}) => {
 Page.propTypes = {
   bg: PropTypes.string,
   className: PropTypes.string,
+  ret: PropTypes.object,
+  children: PropTypes.node,
 };
 
 export default Page;
