@@ -26,6 +26,7 @@
     "@fower/core": "^1.16.0",
     "@fower/taro": "^1.16.0",
     "@tarojs/taro": "^3.2.10",
+    "@mxjs/m-ret": "^0.1.0",
     "clsx": "^1.1.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
@@ -35,7 +36,8 @@
     "@miaoxing/dev": "^7.0.1",
     "@testing-library/react": "^11.2.6",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "miaoxing": "^0.2.5"
   },
   "peerDependencies": {
     "react": ">=16.13.1",
@@ -43,6 +45,8 @@
   },
   "ciDependencies": {
     "babel-preset-miaoxing": "miaoxing/babel-preset-miaoxing",
-    "@miaoxing/dev": "miaoxing/dev"
+    "@miaoxing/dev": "miaoxing/dev",
+    "@mxjs/m-ret": "miaoxing/mxjs-m-ret",
+    "miaoxing": "miaoxing/miaoxing-js"
   }
 }

@@ -14,3 +14,82 @@ exports[`Page basic 1`] = `
   </taro-view-core>
 </div>
 `;
+
+exports[`Page ret empty 1`] = `
+<div>
+  <taro-view-core
+    class="mx-page css-17ragm3-Component"
+    style="--mx-colors-gray-50: #fafafa; --mx-colors-gray-100: #f4f4f5; --mx-colors-gray-200: #e4e4e7; --mx-colors-gray-300: #d4d4d8; --mx-colors-gray-400: #a1a1aa; --mx-colors-gray-500: #71717a; --mx-colors-gray-600: #52525b; --mx-colors-gray-700: #3f3f46; --mx-colors-gray-800: #27272a; --mx-colors-gray-900: #18181b; --mx-space-0: 0; --mx-space-1: 4; --mx-space-2: 8; --mx-space-3: 12; --mx-space-4: 16; --mx-space-5: 20; --mx-space-6: 24; --mx-space-7: 28; --mx-space-8: 32; --mx-space-9: 36; --mx-space-10: 40; --mx-space-11: 44; --mx-space-12: 48; --mx-space-14: 56; --mx-space-16: 64; --mx-space-20: 80; --mx-space-24: 96; --mx-space-28: 112; --mx-space-32: 128; --mx-space-36: 144; --mx-space-40: 160; --mx-space-44: 176; --mx-space-48: 192; --mx-space-52: 208; --mx-space-56: 224; --mx-space-60: 240; --mx-space-64: 256; --mx-space-72: 288; --mx-space-80: 320; --mx-space-96: 384; --mx-fontSizes-xs: 12; --mx-fontSizes-sm: 14; --mx-fontSizes-base: 16; --mx-fontSizes-lg: 18; --mx-fontSizes-xl: 20; --mx-fontSizes-2xl: 24; --mx-fontSizes-3xl: 30; --mx-fontSizes-4xl: 36; --mx-fontSizes-5xl: 48; --mx-fontSizes-6xl: 60; --mx-fontSizes-7xl: 72; --mx-fontSizes-8xl: 96; --mx-fontSizes-9xl: 128;"
+  >
+    <taro-block-core>
+      <taro-view-core
+        style="display: flex; height: 100vh; text-align: center; align-items: center; justify-content: center; flex-direction: column;"
+      >
+        <taro-view-core
+          class="at-activity-indicator at-activity-indicator--isopened"
+        >
+          <taro-view-core
+            class="at-activity-indicator__body"
+          >
+            <taro-view-core
+              class="at-loading"
+            >
+              <taro-view-core
+                class="at-loading__ring"
+              />
+              <taro-view-core
+                class="at-loading__ring"
+              />
+              <taro-view-core
+                class="at-loading__ring"
+              />
+            </taro-view-core>
+          </taro-view-core>
+          <taro-text-core
+            class="at-activity-indicator__content"
+          >
+            加载中...
+          </taro-text-core>
+        </taro-view-core>
+      </taro-view-core>
+    </taro-block-core>
+  </taro-view-core>
+</div>
+`;
+
+exports[`Page ret err 1`] = `
+<div>
+  <taro-view-core
+    class="mx-page css-17ragm3-Component"
+    style="--mx-colors-gray-50: #fafafa; --mx-colors-gray-100: #f4f4f5; --mx-colors-gray-200: #e4e4e7; --mx-colors-gray-300: #d4d4d8; --mx-colors-gray-400: #a1a1aa; --mx-colors-gray-500: #71717a; --mx-colors-gray-600: #52525b; --mx-colors-gray-700: #3f3f46; --mx-colors-gray-800: #27272a; --mx-colors-gray-900: #18181b; --mx-space-0: 0; --mx-space-1: 4; --mx-space-2: 8; --mx-space-3: 12; --mx-space-4: 16; --mx-space-5: 20; --mx-space-6: 24; --mx-space-7: 28; --mx-space-8: 32; --mx-space-9: 36; --mx-space-10: 40; --mx-space-11: 44; --mx-space-12: 48; --mx-space-14: 56; --mx-space-16: 64; --mx-space-20: 80; --mx-space-24: 96; --mx-space-28: 112; --mx-space-32: 128; --mx-space-36: 144; --mx-space-40: 160; --mx-space-44: 176; --mx-space-48: 192; --mx-space-52: 208; --mx-space-56: 224; --mx-space-60: 240; --mx-space-64: 256; --mx-space-72: 288; --mx-space-80: 320; --mx-space-96: 384; --mx-fontSizes-xs: 12; --mx-fontSizes-sm: 14; --mx-fontSizes-base: 16; --mx-fontSizes-lg: 18; --mx-fontSizes-xl: 20; --mx-fontSizes-2xl: 24; --mx-fontSizes-3xl: 30; --mx-fontSizes-4xl: 36; --mx-fontSizes-5xl: 48; --mx-fontSizes-6xl: 60; --mx-fontSizes-7xl: 72; --mx-fontSizes-8xl: 96; --mx-fontSizes-9xl: 128;"
+  >
+    <taro-block-core>
+      <taro-view-core
+        style="display: flex; height: 100vh; text-align: center; align-items: center; justify-content: center; flex-direction: column;"
+      >
+        <taro-image-core
+          style="margin-bottom: 1rem;"
+        />
+        <taro-view-core
+          style="margin-bottom: 1rem; font-size: 1.125rem;"
+        >
+          my err
+        </taro-view-core>
+      </taro-view-core>
+    </taro-block-core>
+  </taro-view-core>
+</div>
+`;
+
+exports[`Page ret suc 1`] = `
+<div>
+  <taro-view-core
+    class="mx-page css-17ragm3-Component"
+    style="--mx-colors-gray-50: #fafafa; --mx-colors-gray-100: #f4f4f5; --mx-colors-gray-200: #e4e4e7; --mx-colors-gray-300: #d4d4d8; --mx-colors-gray-400: #a1a1aa; --mx-colors-gray-500: #71717a; --mx-colors-gray-600: #52525b; --mx-colors-gray-700: #3f3f46; --mx-colors-gray-800: #27272a; --mx-colors-gray-900: #18181b; --mx-space-0: 0; --mx-space-1: 4; --mx-space-2: 8; --mx-space-3: 12; --mx-space-4: 16; --mx-space-5: 20; --mx-space-6: 24; --mx-space-7: 28; --mx-space-8: 32; --mx-space-9: 36; --mx-space-10: 40; --mx-space-11: 44; --mx-space-12: 48; --mx-space-14: 56; --mx-space-16: 64; --mx-space-20: 80; --mx-space-24: 96; --mx-space-28: 112; --mx-space-32: 128; --mx-space-36: 144; --mx-space-40: 160; --mx-space-44: 176; --mx-space-48: 192; --mx-space-52: 208; --mx-space-56: 224; --mx-space-60: 240; --mx-space-64: 256; --mx-space-72: 288; --mx-space-80: 320; --mx-space-96: 384; --mx-fontSizes-xs: 12; --mx-fontSizes-sm: 14; --mx-fontSizes-base: 16; --mx-fontSizes-lg: 18; --mx-fontSizes-xl: 20; --mx-fontSizes-2xl: 24; --mx-fontSizes-3xl: 30; --mx-fontSizes-4xl: 36; --mx-fontSizes-5xl: 48; --mx-fontSizes-6xl: 60; --mx-fontSizes-7xl: 72; --mx-fontSizes-8xl: 96; --mx-fontSizes-9xl: 128;"
+  >
+    <taro-block-core>
+      suc
+    </taro-block-core>
+  </taro-view-core>
+</div>
+`;

@@ -3,10 +3,26 @@ import {render} from '@testing-library/react';
 import {View} from '@fower/taro';
 import {useContext, useEffect} from 'react';
 import PropTypes from 'prop-types';
+import {Ret} from 'miaoxing';
 
 describe('Page', () => {
   test('basic', () => {
     const result = render(<Page>test</Page>);
+    expect(result.container).toMatchSnapshot();
+  });
+
+  test('ret empty', () => {
+    const result = render(<Page ret={{}}>test</Page>);
+    expect(result.container).toMatchSnapshot();
+  });
+
+  test('ret suc', () => {
+    const result = render(<Page ret={Ret.suc()}>suc</Page>);
+    expect(result.container).toMatchSnapshot();
+  });
+
+  test('ret err', () => {
+    const result = render(<Page ret={Ret.err('my err')}>err</Page>);
     expect(result.container).toMatchSnapshot();
   });
 
