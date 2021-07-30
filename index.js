@@ -21,7 +21,7 @@ const Page = ({bg, className, children, ...props}) => {
   const [css, setCss] = useState({});
 
   useEffect(() => {
-    bg && Taro.setBackgroundColor({
+    process.env.TARO_ENV !== 'h5' && bg && Taro.setBackgroundColor({
       backgroundColor: bg,
     });
   }, [bg]);
