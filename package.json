@@ -23,8 +23,8 @@
   },
   "dependencies": {
     "@tarojs/components": "^3.3.10",
-    "@fower/core": "^1.52.0",
-    "@fower/taro": "^1.52.0",
+    "@fower/core": "^1.59.0",
+    "@fower/taro": "^1.59.0",
     "@tarojs/taro": "^3.3.10",
     "@mxjs/m-ret": "^0.1.1",
     "clsx": "^1.1.1",
