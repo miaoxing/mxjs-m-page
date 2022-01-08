@@ -13,17 +13,17 @@ describe('Page', () => {
 
   test('ret empty', () => {
     const result = render(<Page ret={{}}>test</Page>);
-    expect(result.container).toMatchSnapshot();
+    expect(result.container.textContent).toBe('加载中...');
   });
 
   test('ret suc', () => {
     const result = render(<Page ret={Ret.suc()}>suc</Page>);
-    expect(result.container).toMatchSnapshot();
+    expect(result.container.textContent).toBe('suc');
   });
 
   test('ret err', () => {
     const result = render(<Page ret={Ret.err('my err')}>err</Page>);
-    expect(result.container).toMatchSnapshot();
+    expect(result.container.textContent).toBe('my err');
   });
 
   test('PageContext', () => {
