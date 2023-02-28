@@ -43,6 +43,9 @@
     "react": ">=16.13.1",
     "react-dom": ">=16.13.1"
   },
+  "resolutions": {
+    "@fower/taro/**/@fower/core": "~1.75.0"
+  },
   "ciDependencies": {
     "babel-preset-miaoxing": "miaoxing/babel-preset-miaoxing",
     "jest-preset-miaoxing": "miaoxing/jest-preset-miaoxing",
