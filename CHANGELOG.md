@@ -1,3 +1,15 @@
+## [1.1.1](https://github.com/miaoxing/mxjs-m-page/compare/v1.1.0...v1.1.1) (2023-05-31)
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/m-ret:** upgrade from `1.0.3` to `1.0.4`
+* **@miaoxing/dev:** upgrade from `8.2.0` to `8.2.1`
+* **miaoxing:** upgrade from `0.4.6` to `0.4.7`
+
 # [1.1.0](https://github.com/miaoxing/mxjs-m-page/compare/v1.0.2...v1.1.0) (2023-01-01)
 
 
